@@ -1,0 +1,11 @@
+{
+  "name": "smartlife-home-control",
+  "version": "1.0.0",
+  "description": "SmartLife Home Control - Full Stack App",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "start:backend": "cd backend && npm start",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  }
+}

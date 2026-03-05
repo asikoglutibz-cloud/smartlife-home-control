@@ -2,13 +2,14 @@ services:
   - type: web
     name: smartlife-backend
     env: node
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && npm start
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: backend
     envVars:
       - key: NODE_ENV
         value: production
       - key: JWT_SECRET
-        generateValue: true
+        value: smartlife-secret-key-change-later
       - key: FRONTEND_URL
         value: "*"
     plan: free
